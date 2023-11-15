@@ -1,6 +1,6 @@
 ﻿public interface IRecipientRepository : IBaseRepository<Recipient>
 {
-    Task<Recipient> GetByName(string name, CancellationToken cancellationToken);
+    public Task<Recipient> GetByName(string name, CancellationToken cancellationToken);
 
-    Task<Recipient> GetByCpf(string cpf, CancellationToken cancellationToken);
+    public Task<Recipient> GetByCpf(string cpf, CancellationToken cancellationToken);
 }
