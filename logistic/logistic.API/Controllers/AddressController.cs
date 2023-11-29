@@ -1,6 +1,5 @@
-﻿namespace logistic.API.Controllers
+﻿using Microsoft.AspNetCore.Mvc;
+
+public class AddressController : ControllerBase
 {
-    public class AddressController
-    {
-    }
 }
