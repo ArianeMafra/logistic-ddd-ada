@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-public class CreateProductValidator : AbstractValidator<CreateProductRequest>
+public  sealed class CreateProductValidator : AbstractValidator<CreateProductRequest>
 {
     public CreateProductValidator()
     {

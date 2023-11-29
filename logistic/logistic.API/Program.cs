@@ -7,7 +7,20 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Configure persistence 
+builder.Services.ConfigurePersistenceApp(builder.Configuration);
+
+// Register services related to the application
+// auto mapper, mediator, fluent id
+builder.Services.ConfigureApplicationApp();
+
+// Configure CORS
+builder.Services.ConfigureCorsPolicy();
+
 var app = builder.Build();
+
+//Create BD
+BD.CreateDatabase(app);
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

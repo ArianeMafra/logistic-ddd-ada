@@ -1,6 +1,4 @@
-﻿using System.Reflection.Metadata.Ecma335;
-
-public sealed class Recipient : BaseEntity
+﻿public sealed class Recipient : BaseEntity
 {
     public string Name { get; set; }
     public Address Address { get; set; }

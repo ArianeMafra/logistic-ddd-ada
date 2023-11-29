@@ -1,7 +1,7 @@
 ﻿public class Address : BaseEntity
 {
     public string Street { get; set; }
-    public string Number { get; set; }
+    public int Number { get; set; }
     public string Neighborhood { get; set; }
     public string ZipCode { get; set; }
     public string? AddressLine2 { get; set; }

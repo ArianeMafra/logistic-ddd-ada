@@ -2,4 +2,4 @@
 public sealed record CreateProductRequest(
     string ProductName, 
     double ProductPrice, 
-    int Quantity) : IRequest<CreateProductRequest>;
+    int Quantity) : IRequest<CreateProductResponse>;
