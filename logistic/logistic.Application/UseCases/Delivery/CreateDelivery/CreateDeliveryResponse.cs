@@ -7,4 +7,6 @@
     public Status Status { get; set; }
     public DateTime EstimatedDeliveryTime { get; set; }
     public DateTime DeliveryDate { get; set; }
+    public double Price { get; set; }
+
 }

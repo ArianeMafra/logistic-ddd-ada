@@ -19,7 +19,7 @@ public class ValidationBehavior<TRequest, TResponse> : IPipelineBehavior<TReques
 
         var validationResult = await _validator.ValidateAsync(request, cancellationToken);
 
-        if (validationResult.IsValid)
+        if (!validationResult.IsValid)
         {
             throw new ValidationException(validationResult.Errors);
         }

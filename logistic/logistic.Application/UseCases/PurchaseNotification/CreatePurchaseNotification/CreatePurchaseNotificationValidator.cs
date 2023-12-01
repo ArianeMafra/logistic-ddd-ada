@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-public sealed class CreatePurchaseNotificationValidator : AbstractValidator<PurchaseNotification>
+public sealed class CreatePurchaseNotificationValidator : AbstractValidator<CreatePurchaseNotificationRequest>
 {
     public CreatePurchaseNotificationValidator()
     {
